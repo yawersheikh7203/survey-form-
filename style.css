@@ -1,0 +1,123 @@
+/* Styling the Body element i.e. Color, 
+		Font, Alignment */
+        body {
+
+            text-align: center;
+            height: 100%;
+            background-image: url(https://w0.peakpx.com/wallpaper/677/889/HD-wallpaper-black-stylish-background-green-neon-lines-green-light-effects-abstract-black-background.jpg);
+            background-size: cover;
+            background-position: 100vh;
+        
+        }
+        
+        .heading {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-family: "YourFontName", Arial, Helvetica, sans-serif;
+            font-size: x-large;
+        }
+        
+        h1 {
+            background-color: #3498db;
+            background-image: linear-gradient(45deg, #3498db, #c0392b);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        
+        
+        h1 {
+            transition: color 0.3s ease;
+        }
+        
+        h1:hover {
+            color: #e74c3c;
+        }
+        
+        /* @keyframes colorChange */
+        
+        @keyframes glow {
+            0% {
+                text-shadow: none;
+            }
+        
+            50% {
+                text-shadow: 0 0 10px #22e6bf;
+            }
+        
+            100% {
+                text-shadow: none;
+            }
+        }
+        
+        h1 {
+            animation: glow 3s infinite;
+        }
+        
+        
+        
+        
+        /* Styling the Form (Color, Padding, Shadow) */
+        form {
+            background-color: none;
+            color: #fff;
+            font-size: large;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 30px 20px;
+            box-shadow: 16px 22px 33px -5px rgba(0,0,0,0.7);
+            -webkit-box-shadow: 16px 22px 33px -5px rgba(0,0,0,0.7);
+            -moz-box-shadow: 16px 22px 33px -5px rgba(0,0,0,0.7);
+        
+        }
+        
+        /* Styling form-control Class */
+        .form-control {
+            text-align: left;
+            margin-bottom: 25px;
+        }
+        
+        /* Styling form-control Label */
+        .form-control label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        /* Styling form-control input, 
+                        select, textarea */
+        .form-control input,
+        .form-control select,
+        .form-control textarea {
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 95%;
+        }
+        
+        /* Styling form-control Radio 
+                        button and Checkbox */
+        .form-control input[type="radio"],
+        .form-control input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+        }
+        
+        /* Styling Button */
+        
+        .hover-button {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        
+        .hover-button:hover {
+            background-color: #18191b;
+            transform: scale(1.05);
+            /* Scale up by 5% on hover */
+        }
